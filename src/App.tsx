@@ -24,6 +24,10 @@ export default function App() {
           Item <em>trois</em>
         </li>
       </ul>
+
+      <div class="outer">
+        <div class="box">la boite interne vaut 90% - 30px</div>
+      </div>
     </div>
   );
 }
