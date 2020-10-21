@@ -55,3 +55,17 @@ li {
   background-color: purple;
   color: white;
 }
+
+.fnac {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  transform: rotate(0.8turn);
+}
+
+@media (max-width: 30em) {
+  body {
+    background-color: gray;
+  }
+}

@@ -28,6 +28,8 @@ export default function App() {
       <div class="outer">
         <div class="box">la boite interne vaut 90% - 30px</div>
       </div>
+
+      <div class="fnac" />
     </div>
   );
 }
