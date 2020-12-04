@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="theme-color" content="#000000">
-	<!--
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-	<!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -20,24 +22,54 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-	<title>React App</title>
-</head>
+    <title>React App</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
 
-<body>
-	<noscript>
-		You need to enable JavaScript to run this app.
-	</noscript>
-	<div id="root"></div>
-	<!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div>
+      <div className="App">
+        <h1>Je suis un titre de niveau un</h1>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <p>
+          Ceci est un paragraphe. Dans ce texte il y a un{" "}
+          <span>élément span</span>
+          et aussi un <a href="http://example.com">lien</a>.
+        </p>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-</body>
+        <p class="special">
+          Ceci est un second paragraphe. On y trouve un élément{" "}
+          <em>mis en valeur</em>.
+        </p>
 
+        <ul>
+          <li>Item un</li>
+          <li class="special">Item deux</li>
+          <li>Item <em>trois</em></li>
+        </ul>
+
+        <div class="outer">
+          <div class="box">la boite interne vaut 90% - 30px</div>
+        </div>
+
+        <div class="fnac" />
+      </div>
+    </div>
+    <div style="font-style: italic;">
+      <p>Sources :</p>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+          >
+            MDN web docs > Learn web development > Getting started with the Web
+            > HTML basics
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
